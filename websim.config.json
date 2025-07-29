@@ -1,0 +1,27 @@
+{
+  "database": {
+    "schema": {
+      "applicants_v1": {
+        "id": {
+          "type": "text",
+          "description": "The unique identifier for the applicant, same as the user_id to enforce uniqueness."
+        },
+        "user_id": {
+          "type": "text",
+          "description": "The user's unique ID."
+        }
+      },
+      "game_state_v1": {
+        "id": {
+          "type": "text",
+          "description": "A unique key for the game state record, e.g., 'SQUID_GAME_V1'."
+        },
+        "competition_start_utc": {
+          "type": "timestamptz",
+          "description": "The UTC timestamp when the competition begins."
+        }
+      }
+    }
+  }
+}
+
